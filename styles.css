@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Gunakan font modern */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* Gradasi warna */
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+form input {
+    width: 94.5%;
+    padding: 12px 15px;
+    margin-bottom: 15px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357ab8;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9f7e9;
+    color: #2c662d;
+    border: 1px solid #c7ebc7;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#result p {
+    margin: 10px 0;
+}
+
+/* Animasi untuk #result */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

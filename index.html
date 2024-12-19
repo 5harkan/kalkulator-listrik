@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Penghemat Listrik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-bolt"></i> Kalkulator Penghemat Listrik</h1>
+        <form id="electricity-form">
+            <label for="power">Daya Perangkat (Watt):</label>
+            <input type="number" id="power" placeholder="Contoh: 100" required>
+            
+            <label for="hours">Durasi Penggunaan (Jam/hari):</label>
+            <input type="number" id="hours" placeholder="Contoh: 5" required>
+            
+            <label for="rate">Tarif Listrik (Rp/kWh):</label>
+            <input type="number" id="rate" value="1500" placeholder="Tarif listrik (Rp/kWh)" required>
+            
+            <label for="quantity">Jumlah Perangkat:</label>
+            <input type="number" id="quantity" placeholder="Contoh: 2" value="1" required>
+            
+            <label for="new-power">Daya Perangkat Baru (Watt, opsional):</label>
+            <input type="number" id="new-power" placeholder="Opsional, contoh: 80">
+
+            <button type="button" id="calculate"><i class="fas fa-calculator"></i> Hitung</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
